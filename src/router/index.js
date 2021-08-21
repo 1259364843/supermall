@@ -8,6 +8,8 @@ const Home = () => import('views/home/Home')
 const Category = () => import('views/category/Category')
 const ShopCart = () => import('views/shopcart/ShopCart')
 const Profile = () => import('views/profile/Profile')
+
+const Detail = () => import('views/detail/Detail')
 //  2.创建路由对象实例
 const routes = [
   {
@@ -29,6 +31,11 @@ const routes = [
   {
     path: '/profile',
     component: Profile
+  },
+//  商品详情页面路由
+  {
+    path: '/detail/:iid',
+    component: Detail
   }
 ]
 const router = new VueRouter({
