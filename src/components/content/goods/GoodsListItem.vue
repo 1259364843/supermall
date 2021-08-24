@@ -1,7 +1,7 @@
 <template>
   <div class="goods-item" @click="itemClick">
 <!--    <img v-lazy="shouImage" alt="" @load="imageLoad">-->
-    <img :src="goodsItem.show.img"
+    <img :src="shouImage"
          @load="imageLoad">
     <div class="goods-info">
       <p>{{goodsItem.title}}</p>
@@ -33,8 +33,8 @@ export default {
     },
     //  商品被点击
     itemClick() {
+      // 传递iid
       this.$router.push('/detail/'+this.goodsItem.iid);
-      // this.$router.push('/detail/1m70y5k');
     }
   }
 }

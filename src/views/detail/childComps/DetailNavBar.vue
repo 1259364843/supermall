@@ -33,6 +33,7 @@ export default {
     //  当title被点击时,切换对应title
     titleClick(index) {
       this.curretIndex = index;
+      this.$emit('titleClick', index);
     },
     //  返回按钮的处理
     backClick() {

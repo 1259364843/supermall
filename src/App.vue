@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-<!--    路由占位符-->
-<!--    <keep-alive>-->
-
-<!--    </keep-alive>-->
-    <router-view></router-view>
+    <!--    路由占位符-->
+    <keep-alive exclude="Detail">
+      <router-view></router-view>
+    </keep-alive>
+    <!-- <router-view></router-view> -->
     <!-- 底部tabbar组件   -->
     <MainTabBar></MainTabBar>
   </div>
@@ -15,11 +15,11 @@
 import MainTabBar from "components/content/mainTabBar/MainTabBar";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    MainTabBar
-  }
-}
+    MainTabBar,
+  },
+};
 </script>
 
 <style>

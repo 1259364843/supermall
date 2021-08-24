@@ -71,6 +71,10 @@ export default {
     refresh() {
       console.log("refresh执行");
       this.scroll && this.scroll.refresh()
+    },
+    // 获取当前的y左边值
+    getScrollY() {
+      return this.scroll ? this.scroll.y : 0;
     }
   },
 };

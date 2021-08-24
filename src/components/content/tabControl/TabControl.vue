@@ -2,7 +2,7 @@
 <div class="tab-control">
   <div v-for="(item, index) in titles"
        class="tab-control-item"
-       :class="{active: index === currentIndex}" 
+       :class="{active: index === currentIndex}"
        @click="itemClick(index)">
     <span>{{item}}</span>
   </div>
@@ -45,8 +45,8 @@ export default {
     font-size: 15px;
     height: 40px;
     line-height: 40px;
-    /*background-color: #fff;*/
-    background-color: #42b983;
+    background-color: #fff;
+    /*background-color: #42b983;*/
   }
   .tab-control-item {
     flex: 1;
